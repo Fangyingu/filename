@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <style>
+        i {
+            font-style: normal;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        input {
+            outline: none;
+            box-shadow: none;
+        }
+        #login-header{
+            height: 98px;
+        }
+        .login-header-center{
+            height: 98px;
+            width: 1210px;
+            margin:0 auto;
+            /*background: #9d9d9d;*/
+        }
+        #login-header .login-header-center .fivelux-logo {
+            display: inline-block;
+            height: 98px;
+            width: 244px;
+            background: url("assets/img/logo.jpg") no-repeat ;
+        }
+        .header-line{
+            display: inline-block;
+            width: 2px;
+            height: 44px;
+            vertical-align: middle;
+            background-color: #ccc;
+            margin: 0 18px;
+        }
+        .header-text{
+            display: inline-block;
+            font-size: 22px;
+            color: #999;
+            vertical-align: middle;
+        }
+        .fr {
+            float: right;
+        }
+        #login-header .login-header-center .header-right i {
+            display: inline-block;
+            width: 19px;
+            height: 19px;
+            padding-right: 10px;
+            /*background-image: url(/vendor/images/5lux/login/new/phone-logo.png);*/
+            /*background-size: 19px 19px;*/
+            /*background-repeat: no-repeat;*/
+            vertical-align: middle;
+        }
+#bodyLg{
+    background-color: #262626;
+    width: 100%;
+    text-align: center;
+}
+.bodyLg_son{
+    width: 1210px;
+    height: 584px;
+    margin: 0 auto;
+    background:url("assets/img/login/logoin.jpg") no-repeat;
+}
+.bodyright{
+    width: 400px;
+    height: 524px;
+    margin-top: 30px;
+    background-color: #fff;
+    float: right;
+    margin-right: 40px;
+}
+.bodyright ul{
+    margin: 0 20px;
+    margin-top: 34px;
+    font-size: 20px;
+    line-height: 20px;
+    height: 20px;
+    color: #999;
+}
+.bodyright ul li{
+            width:50%;
+    display: inline-block;
+}
+    .bodyul .f1{
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: 400;
+            width: 49%;
+            text-align: center;
+            cursor: pointer;
+            float: left;
+        border-right: 1px solid #999;
+        }
+       .bodyul .f2{
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: 400;
+            width: 49%;
+            text-align: center;
+            cursor: pointer;
+            float: right;
+        }
+        .saoma{
+            margin-top: 90px;
+        }
+        .bodypt{
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .bodypt{
+            font-size: 14px;
+            color: #999999;
+        }
+        .bodypt a{
+            text-decoration: none;
+            color:#ff9900;
+        }
+        .other{
+            margin-top: 30px;
+        }
+        .bodypb{
+            margin-top: 10px;
+        }
+        .bodypb a{
+            color: #999999;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .bodypb a:hover{
+            color:#c69c6d;
+        }
+        .other_way{
+            height: 74px;
+            position: relative;
+            margin: 0 94px;
+        }
+        .ulhook{
+            position: absolute;
+        width: 100%;
+        height: 32px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        }
+        .lihook{
+            height: 32px;
+            width: 33.333333333%!important;
+            float: left;
+            text-align: center;
+        }
+        .lihook i{
+            width: 32px;
+            height: 32px;
+            display: inline-block;
+            *zoom: 1;
+            *display: block;
+            background-repeat: no-repeat;
+            background-size: 32px 32px;
+            cursor: pointer;
+        }
+        .lihook .weixin{
+            background: url("assets/img/login/is_wx.png") no-repeat;
+        }
+        .lihook .qq{
+            background: url("assets/img/login/is_qq.png") no-repeat;
+        }
+        .lihook .weibo{
+            background: url("assets/img/login/is_wb.png") no-repeat;
+        }
+.user{
+    display: block;
+    margin: 0 31px;
+    margin-top: 16px;
+    width: 296px;
+    height: 48px;
+    border: 1px solid #CCC;
+    padding: 0 20px;
+    font-size: 14px;
+  color: #999999;
+}
+.password{
+    display: block;
+    margin: 0 31px;
+    margin-top: 16px;
+    width: 296px;
+    height: 48px;
+    border: 1px solid #CCC;
+    padding: 0 20px;
+    font-size: 14px;
+    color: #999999;
+}
+    .submit{
+        width: 338px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: #fff;
+        background: #333;
+        margin: 0 31px;
+        /* text-decoration: none; */
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        margin-top: 50px;
+    }
+        .submit:hover{
+            background-color: red;
+            transition: all 1s;
+
+        }
+        .autoul{
+            margin-left: 40px!important;
+        }
+        .autoli{
+            float: left;
+        }
+        .autoli label{
+            width: 62px;
+            height: 14px;
+            cursor: pointer;
+        }
+
+        .autoli label span{
+            font-size: 14px;
+            margin-left: 5px;
+        }
+        .autolir{
+            float: right;
+            height: 100%;
+            font-size: 14px;
+            color: #999999;
+        }
+        .autolir a{
+            text-decoration: none;
+            color:#ff9900;
+        }
+        #footer{
+            background: url(assets/img/footer/footer_message_bg.jpg) center;
+            border-top: 1px solid #c9c9c9;
+        }
+        .footer_son{
+            width: 1210px;
+            height: 600px;
+            margin: 0 auto;
+        }
+    </style>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+<div id="login-header">
+    <div class="login-header-center">
+        <a href="/" class="fivelux-logo" style="vertical-align: middle;"></a>
+        <span class="header-line"></span>
+        <span class="header-text">欢迎登录</span>
+        <div class="header-right fr">
+            <div style="display: table-cell;vertical-align: middle;">
+                <i></i>
+                <p>客服热线：4008-6767-38</p>
+            </div>
+        </div>
+    </div>
+</div>
+ <div id="bodyLg">
+     <div class="bodyLg_son">
+         <div class="loginone bodyright">
+             <ul class="bodyul">
+                 <li class="f1 f1o" style="color:#000;">扫码登录</li>
+                 <li class="f2 f2o">账户登录</li>
+             </ul>
+             <div class="saoma"><img src="assets/img/login/saoma.jpg" alt="登录"></div>
+             <p class="bodypt">打开第<a href="#">五大道App</a>扫一扫登录</p>
+             <p class="bodypb"> <a href="http://www.5lux.com/user/register">立即注册有惊喜 &gt;</a></p>
+             <div class="other">
+                 <img src="assets/img/login/other-type.jpg" alt="登录">
+             </div>
+             <div class="other_way">
+                 <ul class="ulhook">
+                     <li class="lihook">
+                         <a href="#"> <i class="weixin"></i></a>
+                     </li>
+                     <li class="lihook">
+                         <a href="#"><i class="qq"></i></a>
+                     </li>
+                     <li class="lihook">
+                         <a href="#"><i class="weibo"></i></a>
+                     </li>
+                 </ul>
+             </div>
+         </div>
+         <div class="bodyright loginTwo"  style="display:none">
+             <ul class="bodyul">
+                 <li class="f1 f1t">扫码登录</li>
+                 <li class="f2 f2t">账户登录</li>
+             </ul>
+             <form action="">
+                 <input class="user" type="text" value="邮箱/手机号/账号">
+                 <input class="password" type="text" value="密码">
+                 <input class="submit" type="submit" value="立即登录">
+                 <ul class="autoul">
+                     <li class="autoli">
+                         <label for="">
+                             <input type="checkbox" ><span>自动登录</span>
+                         </label>
+                     </li>
+                     <li class="autolir"><a href="#">立即注册|</a>忘记密码？</li>
+                 </ul>
+             </form>
+             <div class="other_way">
+                 <ul class="ulhook">
+                     <li class="lihook">
+                         <a href="#"><i class="weixin"></i></a>
+                     </li>
+                     <li class="lihook">
+                         <a href="#"><i class="qq"></i></a>
+                     </li>
+                     <li class="lihook">
+                         <a href="#"><i class="weibo"></i></a>
+                     </li>
+                 </ul>
+             </div>
+         </div>
+    </div>
+ </div>
+     <script>
+     $(".f2o").on("click",clickHandler);
+     function clickHandler(e) {
+         $(".loginTwo").css({
+             display:"block",
+         });
+         $(".f2t").css({
+             color:"#000"
+         });
+         $(".loginone").css({
+             display:"none",
+             color:"#999999"
+         })
+     }
+     </script>
+
+<div id="footer">
+    <div class="footer_son">
+        <div class="footer_top">
+            <ul>
+                <li>
+                    <a href="#"><img src="assets/img/footer/1.jpg" alt=""></a>
+                    <div>
+                        <p>正品保障</p>
+                        <p>品牌授权，官方正品</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_center"></div>
+        <div class="footer_bottom"></div>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
